@@ -1,0 +1,63 @@
+body {
+    font-family: $font_family;
+    color: $font_color;
+}
+
+.page-wrapper {
+    position: relative;
+}
+
+/*** INIZIO HEADER ***/
+.head {
+    width: 100%;
+    @include centratura;
+    @include bordo_separatore;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    font-size: $font_small_size;
+    background-color: #fff;
+    text-transform: uppercase;
+
+    .logo {
+        width: 200px;
+        img {
+            width: 100%;
+        }
+    }
+
+    .menu {
+        @include my-flex(flex-end, center);
+        list-style-type: none;
+        width: 90%;
+
+        li {
+            display: inline-block;
+            padding-left: 50px;
+            cursor: pointer;
+            @include animation_hover;
+
+            button {
+                text-transform: uppercase;
+                @include bottone_verde;
+                @include animation_hover;
+            }
+        }
+
+        li:hover {
+            color: $font_color_hover;
+        }
+
+        li > button:hover {
+            color: #fff;
+            background-color: $colore_sfondo_bottoni_hover;
+        }
+    }
+}
+/*** FINE HEADER ***/
+
+.jumbo {
+    margin-top: 75px;
+}

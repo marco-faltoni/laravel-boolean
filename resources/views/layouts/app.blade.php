@@ -10,9 +10,12 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </head>
     <body>
-        @include('partials.header')
-        @yield('content')
-        @include('partials.footer')
+        <div class="page-wrapper">
+            @include('partials.header')
+            @yield('content')
+            @include('partials.footer')
+        </div>
+        
         <script src="{{ asset('js/app.css') }}"></script>
     </body>
 </html>

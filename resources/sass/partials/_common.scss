@@ -1,0 +1,78 @@
+@mixin my-flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin centratura {
+    margin: 0 auto;
+}
+
+@mixin margini($verticali, $laterali) {
+    margin: $verticali $laterali;
+}
+
+@mixin bottoni_blu {
+    line-height: 35px;
+    padding: 0 20px;
+    color: #fff;
+    font-size: $font_small_size;
+    font-weight: $font_bold;
+    background: $colore_sfondo_bottoni;
+    border: none;
+    border-radius: 7px;
+    cursor:pointer;
+}
+
+@mixin bottone_verde {
+    line-height: 35px;
+    padding: 0 20px;
+    color: #fff;
+    font-size: $font_small_size;
+    background: #60cf4e;
+    border: 1px solid $colore_sfondo_bottoni;
+    border-radius: 7px;
+    cursor:pointer;
+}
+
+@mixin bordo_separatore{
+    border-bottom: 0.5px solid #bdb5af;
+}
+
+@mixin padding ($sopra, $lati) {
+    padding: $sopra $lati;
+}
+
+@mixin icona_chat {
+    position: fixed;
+    z-index: 5;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: $text_color_link;
+    cursor: pointer;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 32px 0 rgba(0, 0, 0, 0.16);
+}
+
+@mixin sottomenu {
+    position: absolute;
+    top: 22px;
+    left: 40px;
+    padding-left: 0;
+    opacity: 0;
+    z-index: 5;
+    transition: opacity linear 0.15s;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+    background: #fff;
+    border: 1px solid #e1ddd4;
+    border-radius: 7px;
+}
+
+@mixin animation_hover {
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+}

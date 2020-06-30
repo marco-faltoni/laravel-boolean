@@ -1,0 +1,38 @@
+/*** INZIO FOOTER ***/
+footer {
+    color: #fff;
+    background-color: $colore_sfondi;
+    @include padding(60px, 0);
+
+    .footer-head {
+        max-width:$width_generale;
+        height: 200px;
+        @include centratura;
+
+        .help {
+            float: left;
+            width: 50%;
+            img {
+                width: 200px;
+                margin-right: 10px;
+            }
+        }
+        .info {
+            float: right;
+            width: 50%;
+            .menu {
+                list-style-type: none;
+                width: 100%;
+                font-size: $font_middle_size;
+                padding: 00px;
+                text-align: right;
+                cursor: pointer;
+                @include animation_hover;
+                li:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+/*** FINE FOOTER ***/
