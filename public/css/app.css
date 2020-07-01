@@ -378,12 +378,16 @@ body {
   position: relative;
 }
 
+.active {
+  border-bottom: 1px solid #72c665;
+  padding-top: 5px;
+}
+
 /*** INIZIO HEADER ***/
 
 .head {
   width: 100%;
   margin: 0 auto;
-  border-bottom: 0.5px solid #bdb5af;
   height: 75px;
   position: fixed;
   top: 0;
@@ -392,6 +396,8 @@ body {
   font-size: 14px;
   background-color: #fff;
   text-transform: uppercase;
+  padding: 10px;
+  padding-bottom: 0;
 }
 
 .head .logo {
@@ -408,11 +414,12 @@ body {
   align-items: center;
   list-style-type: none;
   width: 90%;
+  padding-right: 25px;
 }
 
 .head .menu li {
   display: inline-block;
-  padding-left: 50px;
+  padding: 0 25px 10px;
   cursor: pointer;
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
@@ -432,6 +439,11 @@ body {
   transition-timing-function: ease-in;
 }
 
+.head .menu li a {
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
 .head .menu li:hover {
   color: #30488F;
 }
@@ -444,7 +456,7 @@ body {
 /*** FINE HEADER ***/
 
 .jumbo {
-  margin-top: 75px;
+  margin-top: 95.5px;
 }
 
 /*** INZIO FOOTER ***/

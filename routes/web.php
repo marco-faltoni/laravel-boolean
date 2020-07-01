@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('Home');
-});
+})->name('Home');
 
 Route::get('/faq', function(){
     return view('domande_frequenti');

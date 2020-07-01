@@ -4,7 +4,7 @@
     </div>
 
     <ul class="menu">
-        <li class="home">Home</li>
+    <li class="home {{ Request::route()->getName() == 'Home' ? 'active' : '' }}"> <a href="{{ route('Home') }}">Home</a></li>
         <li>Corso</li>
         <li>Dopo il Corso</li>
         <li>Lezione Gratuita</li>
