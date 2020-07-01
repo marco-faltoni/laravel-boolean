@@ -44,7 +44,29 @@
         </div>
     </div>
     <div class="partners bg-white">
-
+        <p>I nostri studenti sono stati assunti da:</p>
+        <div class="aziende uno">
+            <section>
+                <img src="{{ asset('img/facileit.png') }}" alt="">
+            </section>
+            <section>
+                <img src="{{ asset('img/oneday.png') }}" alt="">
+            </section>
+            <section>
+                <img src="{{ asset('img/prima.png') }}" alt="">
+            </section>
+        </div>
+        <div class="aziende due">
+            <section>
+                <img src="{{ asset('img/fabbrica-digitale-big.png') }}" alt="">
+            </section>
+            <section>
+                <img src="{{ asset('img/nephila.png') }}" alt="">
+            </section>
+            <section>
+                <img src="{{ asset('img/rds.png') }}" alt="">
+            </section>
+        </div>
     </div>
     
 @endsection

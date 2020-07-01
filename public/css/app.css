@@ -574,7 +574,39 @@ body {
 
 .bg-white {
   background-color: #fff;
-  padding: 50px 0;
+  padding: 30px 0;
+}
+
+.partners {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.partners .aziende {
+  width: 100%;
+}
+
+.partners .aziende img {
+  width: 85%;
+}
+
+.partners .uno {
+  display: flex;
+  align-items: center;
+}
+
+.partners .uno section {
+  float: left;
+}
+
+.partners .due {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.partners .due section {
+  float: right;
 }
 
 .wrap-policy {
@@ -590,6 +622,27 @@ body {
 
 .wrap-policy section {
   margin: 55px 0;
+}
+
+.chat-icona {
+  position: fixed;
+  z-index: 5;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #60cf4e;
+  cursor: pointer;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 32px 0 rgba(0, 0, 0, 0.16);
+}
+
+.chat-icona i {
+  font-size: 26px;
+  right: 17px;
+  position: absolute;
+  top: 19px;
+  color: #fff;
 }
 
 /*** INZIO FOOTER ***/

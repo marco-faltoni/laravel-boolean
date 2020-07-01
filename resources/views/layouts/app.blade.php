@@ -15,6 +15,10 @@
             @yield('content')
             @include('partials.footer')
         </div>
+
+        <div class="chat-icona">
+            <i class="fas fa-comment-alt"></i>
+        </div>
         
         <script src="{{ asset('js/app.css') }}"></script>
     </body>

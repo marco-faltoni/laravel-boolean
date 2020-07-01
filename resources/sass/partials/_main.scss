@@ -60,8 +60,36 @@
 
 .bg-white {
     background-color: #fff;
-    @include padding(50px, 0);
+    @include padding(30px, 0);
 }
+
+.partners {
+    max-width: $width_generale;
+    @include centratura;
+    .aziende {
+        width: 100%;
+        img {
+            width: 85%;
+        }
+    }
+    .uno {
+        display: flex;
+        align-items: center;
+        section {
+            float: left;
+        }
+    }
+    .due {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        section {
+            float: right;
+        }
+    }     
+}
+
+
 
 .wrap-policy {
     max-width: $width_generale;
@@ -73,5 +101,16 @@
     }
     section {
         margin: 55px 0;
+    }
+}
+
+.chat-icona {
+    @include icona_chat;
+    i {
+        font-size: $font_big_size;
+        right: 17px;
+        position: absolute;
+        top: 19px;
+        color: #fff;
     }
 }
