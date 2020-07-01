@@ -459,6 +459,51 @@ body {
   margin-top: 95.5px;
 }
 
+.jumbo .contents {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.jumbo .contents .title {
+  width: 50%;
+  float: left;
+}
+
+.jumbo .contents .title .h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  padding-bottom: 40px;
+}
+
+.jumbo .contents .title .h1 p {
+  margin: 0;
+}
+
+.jumbo .contents .title .sottotitolo {
+  font-size: 18px;
+}
+
+.jumbo .contents .title .testo ul {
+  padding-left: 15px;
+}
+
+.jumbo .contents .gif {
+  width: 50%;
+  float: left;
+}
+
+.jumbo .contents .gif img {
+  width: 100%;
+}
+
+h1 {
+  margin-top: 95.5px;
+}
+
 /*** INZIO FOOTER ***/
 
 footer {
@@ -472,7 +517,6 @@ footer .footer-head {
   justify-content: flex-start;
   align-items: center;
   max-width: 1150px;
-  height: 200px;
   margin: 0 auto;
 }
 
@@ -502,6 +546,10 @@ footer .footer-head .help .menu {
   transition-timing-function: ease-in;
 }
 
+footer .footer-head .help .menu li {
+  padding: 5px 0;
+}
+
 footer .footer-head .help .menu li:hover {
   text-decoration: underline;
 }
@@ -517,6 +565,31 @@ footer span {
   height: 5px;
   border-bottom: 1px solid #fff;
   margin: 0 auto;
+}
+
+footer .footer-bottom {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+footer .footer-bottom .icons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 30px;
+}
+
+footer .footer-bottom .icons i {
+  font-size: 40px;
+  padding: 0px 30px;
+}
+
+footer .footer-bottom small {
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  text-align: center;
 }
 
 /*** FINE FOOTER ***/

@@ -1,0 +1,40 @@
+.jumbo {
+    margin-top: 95.5px;
+    .contents {
+        max-width: $width_generale;
+        @include centratura;
+        @include my_flex(center, center);
+        @include padding(100px, 0);
+        .title {
+            width: 50%;
+            float: left;
+            .h1 {
+                text-transform: uppercase;
+                font-size: $font_size_jumbo;
+                padding-bottom: 40px;
+                p {
+                    margin: 0;
+                }
+            }
+            .sottotitolo {
+                font-size: $font_middle_size;
+            }
+            .testo {
+                ul {
+                    padding-left: 15px;
+                }
+            }
+        }
+        .gif {
+            width: 50%;
+            float: left;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+h1 {
+    margin-top: 95.5px;
+}

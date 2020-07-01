@@ -7,7 +7,6 @@ footer {
     .footer-head {
         @include my_flex(flex-start, center);
         max-width:$width_generale;
-        height: 200px;
         @include centratura;
 
         .info {
@@ -29,6 +28,11 @@ footer {
                 text-align: right;
                 cursor: pointer;
                 @include animation_hover;
+
+                li {
+                    padding: 5px 0;
+                }
+
                 li:hover {
                     text-decoration: underline;
                 }
@@ -46,6 +50,28 @@ footer {
         height: 5px;
         @include bordo_separatore;
         @include centratura;
+    }
+
+    .footer-bottom {
+        max-width: $width_generale;
+        @include centratura;
+        @include padding(30px, 0);
+
+        .icons {
+            @include my_flex(center, flex-start);
+            padding-bottom: 30px;
+            i {      
+                font-size: 40px;
+                @include padding(0px, 30px);
+            }
+        }
+
+        small {
+            @include centratura;
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
     }
 }
 /*** FINE FOOTER ***/
