@@ -12,16 +12,21 @@
     margin: $verticali $laterali;
 }
 
-@mixin bottoni_blu {
-    line-height: 35px;
-    padding: 0 20px;
-    color: #fff;
-    font-size: $font_small_size;
-    font-weight: $font_bold;
-    background: $colore_sfondo_bottoni;
-    border: none;
-    border-radius: 7px;
-    cursor:pointer;
+@mixin numeri {
+    float: left;
+    width: calc(100% / 3);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    h1 {
+        margin:0;
+        font-size: $font_size_jumbo;
+        font-weight: 400;
+    }
+    p {
+        text-align: center;
+        width: 75%;
+    }
 }
 
 @mixin bottone_verde {
@@ -39,6 +44,10 @@
     border-bottom: 1px solid #fff;
 }
 
+@mixin bordo_verde{
+    border-bottom: 2px solid $colore_sfondo_bottoni;
+}
+
 @mixin padding ($sopra, $lati) {
     padding: $sopra $lati;
 }
@@ -54,20 +63,6 @@
     background: $text_color_link;
     cursor: pointer;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 32px 0 rgba(0, 0, 0, 0.16);
-}
-
-@mixin sottomenu {
-    position: absolute;
-    top: 22px;
-    left: 40px;
-    padding-left: 0;
-    opacity: 0;
-    z-index: 5;
-    transition: opacity linear 0.15s;
-    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
-    background: #fff;
-    border: 1px solid #e1ddd4;
-    border-radius: 7px;
 }
 
 @mixin animation_hover {

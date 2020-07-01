@@ -35,6 +35,30 @@
     }
 }
 
-h1 {
-    margin-top: 95.5px;
+.bg-blue {
+    width: 100%;
+    background-color: $colore_sfondi;
+    @include padding(60px, 0);
+}
+
+.numbers {
+    max-width: $width_generale;
+    @include centratura;
+    color: #fff;
+    @include my_flex (flex-start, center);
+    .percentuale {
+        @include numeri;
+    }
+    .euro {
+        @include numeri;
+    }
+    .first {
+        @include numeri;
+    }
+
+}
+
+.bg-white {
+    background-color: #fff;
+    @include padding(50px, 0);
 }

@@ -27,5 +27,24 @@
             </div>
         </div>
     </div>
+    <div class="bg-blue">
+        <div class="numbers">
+            <section class="percentuale">
+                <h1>98%</h1>
+                <p>La percentuale dei nostri studenti che ora lavora come web developer, oltre la metà a tempo indeterminato.</p>
+            </section>
+            <section class="euro">
+                <h1>€ 23.000</h1>
+                <p>Lo stipendio medio lordo di partenza degli studenti assunti dalle nostre aziende partner.</p>
+            </section>
+            <section class="first">
+                <h1>#1</h1>
+                <p>Siamo il primo istituto online in Italia per indice di gradimento e risultati conseguiti.</p>
+            </section>
+        </div>
+    </div>
+    <div class="partners bg-white">
+
+    </div>
     
 @endsection

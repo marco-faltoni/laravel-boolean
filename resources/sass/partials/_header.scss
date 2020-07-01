@@ -8,8 +8,7 @@ body {
 }
 
 .active {
-    border-bottom: 2px solid $colore_sfondo_bottoni;
-    padding-top: 5px;
+    @include bordo_verde;
 }
 
 /*** INIZIO HEADER ***/
@@ -58,8 +57,9 @@ body {
             }
         }
 
-        li:hover {
+        li:not(:last-child):hover {
             color: $font_color_hover;
+            @include bordo_verde;
         }
 
         li > button:hover {

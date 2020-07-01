@@ -1,6 +1,6 @@
 <header class="head">
     <div class="logo">
-        <img src="{{ asset('img/logo.png') }}" alt="Boolean logo">
+        <a href="{{ route('home') }}"><img src="{{ asset('img/logo.png') }}" alt="Boolean logo"></a>
     </div>
 
     <ul class="menu">
