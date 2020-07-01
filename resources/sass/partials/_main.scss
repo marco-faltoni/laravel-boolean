@@ -62,3 +62,16 @@
     background-color: #fff;
     @include padding(50px, 0);
 }
+
+.wrap-policy {
+    max-width: $width_generale;
+    @include centratura;
+    margin-top: 95.5px;
+    padding: 30px;
+    h1 {
+        font-weight: 400;
+    }
+    section {
+        margin: 55px 0;
+    }
+}

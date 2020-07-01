@@ -577,6 +577,21 @@ body {
   padding: 50px 0;
 }
 
+.wrap-policy {
+  max-width: 1150px;
+  margin: 0 auto;
+  margin-top: 95.5px;
+  padding: 30px;
+}
+
+.wrap-policy h1 {
+  font-weight: 400;
+}
+
+.wrap-policy section {
+  margin: 55px 0;
+}
+
 /*** INZIO FOOTER ***/
 
 footer {
