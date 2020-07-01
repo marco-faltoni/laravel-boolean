@@ -379,7 +379,7 @@ body {
 }
 
 .active {
-  border-bottom: 1px solid #72c665;
+  border-bottom: 2px solid #60cf4e;
   padding-top: 5px;
 }
 
@@ -468,27 +468,30 @@ footer {
 }
 
 footer .footer-head {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   max-width: 1150px;
   height: 200px;
   margin: 0 auto;
 }
 
-footer .footer-head .help {
+footer .footer-head .info {
   float: left;
   width: 50%;
 }
 
-footer .footer-head .help img {
+footer .footer-head .info img {
   width: 200px;
   margin-right: 10px;
 }
 
-footer .footer-head .info {
+footer .footer-head .help {
   float: right;
   width: 50%;
 }
 
-footer .footer-head .info .menu {
+footer .footer-head .help .menu {
   list-style-type: none;
   width: 100%;
   font-size: 18px;
@@ -499,8 +502,21 @@ footer .footer-head .info .menu {
   transition-timing-function: ease-in;
 }
 
-footer .footer-head .info .menu li:hover {
+footer .footer-head .help .menu li:hover {
   text-decoration: underline;
+}
+
+footer .footer-head .help .menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer span {
+  display: block;
+  max-width: 1150px;
+  height: 5px;
+  border-bottom: 1px solid #fff;
+  margin: 0 auto;
 }
 
 /*** FINE FOOTER ***/

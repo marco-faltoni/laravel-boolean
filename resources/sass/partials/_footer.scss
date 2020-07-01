@@ -5,11 +5,12 @@ footer {
     @include padding(60px, 0);
 
     .footer-head {
+        @include my_flex(flex-start, center);
         max-width:$width_generale;
         height: 200px;
         @include centratura;
 
-        .help {
+        .info {
             float: left;
             width: 50%;
             img {
@@ -17,7 +18,7 @@ footer {
                 margin-right: 10px;
             }
         }
-        .info {
+        .help {
             float: right;
             width: 50%;
             .menu {
@@ -31,8 +32,20 @@ footer {
                 li:hover {
                     text-decoration: underline;
                 }
+                li a {
+                    text-decoration: none;
+                    color: #fff;
+                }
             }
         }
+    }
+
+    span {
+        display: block;
+        max-width: $width_generale;
+        height: 5px;
+        @include bordo_separatore;
+        @include centratura;
     }
 }
 /*** FINE FOOTER ***/

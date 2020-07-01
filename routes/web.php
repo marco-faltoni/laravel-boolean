@@ -14,9 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('Home');
-})->name('Home');
+    return view('home');
+})->name('home');
 
 Route::get('/faq', function(){
     return view('domande_frequenti');
 })->name('faq');
+
+Route::get('/privacy', function(){
+    return view('privacy_policy');
+})->name('privacy');
